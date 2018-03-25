@@ -19,20 +19,23 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+import {Button} from "universal_components";
+
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native Nikhil Wankhede!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          To get started, edit App.js as you like
         </Text>
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Button text={"Say Hi to Nikhil"} onPress={()=>{console.warn("Say hi to Nikhil")}}/>
       </View>
     );
   }

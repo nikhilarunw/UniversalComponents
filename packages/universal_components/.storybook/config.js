@@ -1,6 +1,6 @@
 import { configure } from '@storybook/react';
 const req = require.context(
-    '../components/', // path where stories live
+    '../src/components/', // path where stories live
     true, // recursive?
     /\__stories__\/.*.js$/, // story files match this pattern
 );
